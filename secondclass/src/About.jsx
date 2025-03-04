@@ -5,4 +5,11 @@ const About =()=>{
         </>
     )
 }
-export default About
+const Contact =()=>{
+    return(
+        <>
+        <h1>Contact Page</h1>
+        </>
+    )
+}
+export {About,Contact}

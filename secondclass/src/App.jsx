@@ -1,15 +1,17 @@
-import About from './About.jsx'
-import Contact from './Contact.jsx'
-import Gallery from './Gallery.jsx'
-import Services from './Services.jsx'
+// import About from './About.jsx'
+// import Contact from './Contact.jsx'
+// import Gallery from './Gallery.jsx'
+// import Services from './Services.jsx'
+
+import {About as Ab,Contact as Cont} from './About.jsx'
 function App() {
   return(
     <>
     <h1>Welcome to React Class</h1>
-    <About/>
-    <Contact/>
-    <Gallery/>
-    <Services/>
+    <Ab/>
+    <Cont/>
+    {/* <Gallery/>
+    <Services/> */}
 
     </>
   )
