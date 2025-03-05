@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Change from "./Change"
-
+import About from "./About"
 function App() {
   let [name,setName]=useState("JavaScript ")
   let [age,setAge]=useState(20)
@@ -33,6 +33,7 @@ function App() {
     
 
     <Change/>
+    <About/>
     
 
       

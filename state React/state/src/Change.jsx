@@ -1,9 +1,12 @@
 import { useState } from "react"
 
 
+
+
 function Change() {
 
     let [color,setColor]=useState("lightblue")
+  
   
 
 
@@ -13,6 +16,7 @@ function Change() {
     <div style={{height:"100vh",width:"100vh",backgroundColor:color}}>
 
     <button onClick={()=>setColor("red")}>Change Color</button>
+
    
     
 
