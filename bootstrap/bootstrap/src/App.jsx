@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import { useEffect, useState } from 'react';
 
 
 // import Row from 'react-bootstrap/Row';
@@ -18,8 +18,10 @@ import './App.css'
 
 
 function App() {
- 
 
+  let [valu,setValu]=useState(0)
+ 
+  useEffect(()=>{alert("working")},[valu])
   return (
     <>
     <Navbar expand="lg" className="bg-body-tertiary">
@@ -46,6 +48,9 @@ function App() {
       </Container>
     </Navbar>
 
+<h1>{valu}</h1>
+<button onClick={()=>setValu(valu+1)}>inc</button>
+<button onClick={()=>setValu(valu-1)}>inc</button>
 
 {/* <Container>
   <Row>
